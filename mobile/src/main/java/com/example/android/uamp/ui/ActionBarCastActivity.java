@@ -23,8 +23,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
+import androidx.core.view.GravityCompat;
+import androidx.core.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.MediaRouteButton;
@@ -50,7 +50,7 @@ import com.google.android.gms.common.GoogleApiAvailability;
  * The requirements for a subclass is to call {@link #initializeToolbar()} on onCreate, after
  * setContentView() is called and have three mandatory layout elements:
  * a {@link android.support.v7.widget.Toolbar} with id 'toolbar',
- * a {@link android.support.v4.widget.DrawerLayout} with id 'drawerLayout' and
+ * a {@link androidx.core.widget.DrawerLayout} with id 'drawerLayout' and
  * a {@link android.widget.ListView} with id 'drawerList'.
  */
 public abstract class ActionBarCastActivity extends AppCompatActivity {
